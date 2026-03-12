@@ -3,36 +3,104 @@
   <head>
     <!--This receipe is taken from https://cooking.nytimes.com/recipes/1012494-spinach-tofu-and-sesame-stir-fry -->
     <title>hi</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <style>
+      .dm-sans-<uniquifier> {
+      font-family: "DM Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      }
+      
+      
+      .noto-serif-<uniquifier> {
+        font-family: "Noto Serif", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+      }
+      
+      html {
+        font-size: 16px;
+      }
+      
       #a {
         width: 1200px;
       }
       
       .container {
         display: grid;
-        grid-template-columns: 45% 65%;
+        grid-template-columns: 40% 60%;
         background-color: "blue";
-        padding: 40px;
+        padding: 20px;
+        width: 1000px;
+        gap: 10px;
+        align-content: center; 
+        margin: 0px auto;
       }
       
       img {
-        width: 200;
+        width: 600px;
+        margin-bottom: 15px;
       }
+      
+      h1, h2, h3 {
+        font-family: 'Noto Serif';
+      }
+      
+      h1 {
+        font-size: 2em;
+        letter-spacing: 0.1px;
+        margin-bottom: -10px;
+      }
+      
+      h2 {
+        font-size: 1.5em;
+      }
+      
+      h3{
+        font-size: 1em;
+        margin: -10px;
+      }
+      
+      p, li {
+        font-family: 'DM Sans';
+      }
+      
+      p {
+        font-size: 1em;
+      }
+      
+      li {
+        font-size: 0.875em;
+        line-height: 25px;
+      }
+      
+      body {
+        background-color: #faf7e3;
+      }
+      
     </style>
   </head>
   <body>
     <div id="a">
       <div class="container">
-        <div>
+        <div background-color: "blue">
           <h1>
             Spinach, Tofu and Sesame Stir-Fry
           </h1>
           <h2>
             By: Martha Rose Shulman
           </h2>
-          <h3>
+          <p>
             Yield: 3 Servings
-          </h3>
+          </p>
           
           <h2>
             Ingredients
@@ -72,7 +140,9 @@
           <h3>
             Tip
           </h3>
-            Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance.
+          <p>
+            Advance preparation: This is a last-minute   preparation, but you can have your ingredients prepared well in advance.
+          </p>
         </div>
       </div>
     </div>
